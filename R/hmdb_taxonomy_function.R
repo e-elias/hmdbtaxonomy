@@ -49,8 +49,6 @@ hmdb_taxonomy <- function(sheetname)
         tempclass <- hmdb[[i]][[6]]
         #class <- append(class, tempclass)
 
-        print(tempclass)
-
         tempsubclass <- hmdb[[i]][[7]]
         #sub_class <- append(sub_class, tempsubclass)
 
