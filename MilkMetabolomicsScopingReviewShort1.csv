@@ -1,0 +1,10 @@
+metabolites,citation,metabolite_table,mz_measured,rt_min,hmdb_id,instrument,table_subset,metabolite_class,metabolite_subclass,super_class,class,sub_class,direct_parent
+(-)-3-Cyanomethyl-3-hydroxy-1H-indol-2(3H)-one,#492 – Ashokan 2021,Supplementary Table S7,187,6,,LC,acetonitrile extraction method in negative mode,NA,NA,,,,
+(-)-Epicatechin 3'-O-glucuronide,#492 – Ashokan 2021,Supplementary Table S4,467,30,,LC,lower phase of the methanol-chloroform extraction,Benzoic acids and derivatives,NA,,,,
+(-)-Epicatechin 3'-O-glucuronide,#492 – Ashokan 2021,Supplementary Table S4,467,7,,LC,lower phase of the methanol-chloroform extraction,NA,NA,,,,
+(-)-Epigallocatechin 3-(3-methyl-gallate),#492 – Ashokan 2021,Supplementary Table S4,495,16,,LC,lower phase of the methanol-chloroform extraction,NA,NA,,,,
+(-)-Epigallocatechin 3-glucuronide,#492 – Ashokan 2021,Supplementary Table S5,242,2,,LC,upper phase of the methanol-chloroform extraction,NA,NA,,,,
+(-)-Epigallocatechin 3-p-coumaroate,#492 – Ashokan 2021,Supplementary Table S4,494,59,,LC,lower phase of the methanol-chloroform extraction,NA,NA,,,,
+(-)-Epigallocatechin sulfate,#492 – Ashokan 2021,Supplementary Table S4,419,15,,LC,lower phase of the methanol-chloroform extraction,NA,NA,,,,
+(-)-erythro-Anethole glycol 2-glucoside,#492 – Ashokan 2021,Supplementary Table S4,689,5,,LC,lower phase of the methanol-chloroform extraction,NA,NA,,,,
+(-)-Matairesinol 4'-[apiosyl-(1-&gt;2)-glucoside],#492 – Ashokan 2021,Supplementary Table S7,325,31,,LC,acetonitrile extraction method in negative mode,NA,NA,,,,

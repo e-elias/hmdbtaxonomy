@@ -1,13 +1,16 @@
-#' This function extracts the chemical taxonomy of a metabolite
-#' HMDB ID should be on column 6
-#' taxonomy will be outputted on column 11-14set
-#'
+#' Input to function is a csv file and the output is taxonomy.csv
+#' Please make sure the variable "hmdb" was loaded in from an rda file, either
+#' generated from hmdb_parse or loaded in.
+#' This function extracts the chemical taxonomy of metabolites from a csv file.
+#' HMDB IDs should be under the column "hmdb_id".
+#' Taxonomy will be outputted on column names "super_class", "class", "sub_class", "direct_parent".
+#' Please make sure these columns are already included in the csv.
 
 hmdb_taxonomy <- function(sheetname)
 {
   sheet <- read.csv(sheetname, na.string = "NA")
 
-  idlist <- sheet[[6]]
+  idlist <- sheet[[c("hmdb_id")]]
   len <- length(idlist)
 
 
@@ -39,7 +42,8 @@ hmdb_taxonomy <- function(sheetname)
 
       next
     }
-    for (i in 1:217920)
+    len <- length(hmdb)
+    for (i in 1:len)
     {
       if (hmdb[[i]][[1]] == idlist[j])
       {
@@ -78,10 +82,10 @@ hmdb_taxonomy <- function(sheetname)
   }
 
 
-  sheet[11] <- super_class
-  sheet[12] <- class
-  sheet[13] <- sub_class
-  sheet[14] <- direct_parent
+  sheet[c("super_class")] <- super_class
+  sheet[c("class")] <- class
+  sheet[c("sub_class")] <- sub_class
+  sheet[c("direct_parent")] <- direct_parent
 
 
   #df <- data.frame(hmdb_id, super_class, class, sub_class, direct_parent)
